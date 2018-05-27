@@ -18,7 +18,7 @@ def get_novel_content(arcitle_url):
     arcitle_content = re.findall(r'<div class="tpc_content" id="read_tpc">(.*?)</div>', html, re.S)[0]
     # 内容去空格
     arcitle_content = arcitle_content.strip()
-    # 内容去垃圾字符
+    # 内容去垃圾字符，将不需要的用无内容替换
     arcitle_content = arcitle_content.replace('&nbsp;', '')
     arcitle_content = arcitle_content.replace('<br>', '')
     # 返回结果
