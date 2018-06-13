@@ -4,7 +4,7 @@ import re
 # 响应HTTP请求
 import requests
 # MySQL驱动
-import mysql.connector
+import mysql.connector   #Python3中应改用PyMySQL库
 
 # 定义函数，用参数arcitle_url传递文章地址，返回文章内容
 def get_novel_content(arcitle_url):
