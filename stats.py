@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+# encoding: utf-8
+
 # 用DHT22读取当前环境温度和湿度
 # 用12864OLED显示当前日期，时间，IP，CPU，内存，磁盘用量
 # DHT22 out 接树莓派 BCM18
