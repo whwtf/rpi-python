@@ -59,7 +59,7 @@ while True:
     cmd = "top -bn1 | grep load | awk '{printf \"CPU Load: %.2f\", $(NF-2)}'"
     CPUr = subprocess.check_output(cmd, shell=True)
     CPU = str(CPUr.decode('utf8').strip()).strip('b')
-    cmd = "free -m | awk 'NR==2{printf \"Mem: %s/%sMB %.2f%%\", $3,$2,$3*100/$2 }'"
+    cmd = "free -m | awk 'NR==2{printf \"Mem: %s/%sMB %.1f%%\", $3,$2,$3*100/$2 }'"
     MemUsager = subprocess.check_output(cmd, shell=True)
     MemUsage = str(MemUsager.decode('utf8').strip()).strip('b')
     cmd = "df -h | awk '$NF==\"/\"{printf \"Disk: %.1f/%dGB %s\", $3,$2,$5}'"
