@@ -22,7 +22,7 @@ while True:
 
     if m == 30 and s == 0:
         if h > 22 or h < 8:
-            print ("continued")
+            print("continued")
             continue
         libbeep.beepAction(0.05, 0.05, 2)
         time.sleep(1)

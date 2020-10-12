@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # tm1637 test
-# show cur timer
 
 import tm1637
 import RPi.GPIO as GPIO
